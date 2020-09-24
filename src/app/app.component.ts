@@ -20,26 +20,26 @@ export class AppComponent implements AfterViewInit {
     private gameService: GameService
     ) {}
 
-    @HostListener('document:keydown', ['$event']) onKeydownHandler(event: KeyboardEvent) {
-      this.appService.movePlayer(event, 'keydown');
-      }
+    // @HostListener('document:keydown', ['$event']) onKeydownHandler(event: KeyboardEvent) {
+    //   this.appService.movePlayer(event, 'keydown');
+    //   }
        
       @HostListener('document:keyup', ['$event']) onKeyupHandler(event: KeyboardEvent) {
       this.appService.movePlayer(event, 'keyup');
       }
     
     public ngAfterViewInit() {
-      setTimeout(() => {
-        const canvasEl: HTMLCanvasElement = this.canvas.nativeElement;
-        this.appService.createPlayGround(canvasEl);
-        this.subscription = this.appService.getImageLoadEmitter()
-        .subscribe((item) => {
-        this.showLoader = false;
-        this.gameService.startGameLoop();
-      }, 1000);
+      // setTimeout(() => {
+      //   const canvasEl: HTMLCanvasElement = this.canvas.nativeElement;
+      //   this.appService.createPlayGround(canvasEl);
+      //   this.subscription = this.appService.getImageLoadEmitter()
+      //   .subscribe((item) => {
+      //   this.showLoader = false;
+      //   this.gameService.startGameLoop();
+      // }, 1000);
     
     
-    });
+    // });
     }
 
     
