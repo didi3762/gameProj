@@ -8,6 +8,7 @@ import { AppService } from './services/app.service';
 import { HomeComponent } from './comps/home/home.component';
 import { CargameComponent } from './comps/cargame/cargame.component';
 import { CaruselaComponent } from './comps/carusela/carusela.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CaruselaComponent } from './comps/carusela/carusela.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [GameService,AppService],
   bootstrap: [AppComponent]
