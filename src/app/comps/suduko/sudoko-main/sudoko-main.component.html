@@ -1,0 +1,14 @@
+<table class="table table-bordered table-primary" >
+    <!-- <thead>
+      <tr ng-repeat="9">
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead> -->
+    <tbody *ngFor="let x of sudoku_long">
+      <tr >
+        <td *ngFor="let y of sudoku_long">{{y}}</td>
+      </tr>
+    </tbody>
+  </table>

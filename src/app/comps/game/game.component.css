@@ -1,0 +1,18 @@
+.header {
+    background-image: url("src/assets/img/photo-1548084131-6c908b410378.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .description button {
+    border:1px solid #6ab446;
+    background:#6ab446;
+    border-radius: 0;
+    color:#fff;
+  }
+  .description button:hover {
+    border:1px solid #fff;
+    background:#fff;
+    color:#000;
+  }
